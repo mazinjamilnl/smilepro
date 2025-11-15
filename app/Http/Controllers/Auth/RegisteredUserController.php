@@ -36,6 +36,8 @@ class RegisteredUserController extends Controller
             'rolname' => ['required', 'string', 'max:20'],
         ]);
 
+       //  dd($request);
+
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
